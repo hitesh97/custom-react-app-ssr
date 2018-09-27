@@ -10,7 +10,7 @@ import stylusStyles from '../../Fourth.module.styl';
 class Help extends Component {
   render() {
     return (
-      <Page id="help">
+      <Page id="help" tags="Help page Tag here!!">
         <div className={stylusStyles.description}>
           <p>Here's our Help Page.</p>
           <div className={sassStyles.command}>
