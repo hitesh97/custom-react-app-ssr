@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "antd": "^3.9.3",
+    "babel-preset-react-app": "^3.1.2",
     "connected-react-router": "^4.5.0",
     "cookie-parser": "^1.4.3",
     "custom-react-scripts": "0.2.2",
     "forcedomain": "^1.0.0",
+    "ignore-styles": "^5.0.1",
     "js-cookie": "^2.2.0",
     "md5-file": "^4.0.0",
     "morgan": "^1.9.1",
@@ -26,6 +28,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:server": "cross-env NODE_ENV=development node server/index.js"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
