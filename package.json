@@ -29,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start:server": "cross-env NODE_ENV=development node server/index.js"
+    "start:server": "cross-env NODE_ENV=development node server/index.js",
+    "start:server:prod": "cross-env NODE_ENV=production PORT=8083 node server/index.js",
+    "build:start:server:prod": "npm run build && cross-env NODE_ENV=production PORT=8083 DEBUG=express:* node server/index.js"
   },
   "devDependencies": {
     "cross-env": "^5.2.0"

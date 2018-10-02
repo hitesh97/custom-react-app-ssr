@@ -18,6 +18,12 @@ const Help = Loadable({
   modules: ['help']
 });
 
+const About = Loadable({
+  loader: () => import(/* webpackChunkName: "about" */ './about'),
+  loading: () => null,
+  modules: ['About']
+});
+
 // const About = Loadable({
 //   loader: () => import(/* webpackChunkName: "about" */ './about'),
 //   loading: () => null,
@@ -52,6 +58,7 @@ export default () => (
   <Switch>
     <Route exact path="/" component={Homepage} />
     <Route exact path="/help" component={Help} />
+    <Route exact path="/about" component={About} />
     <Route component={NotFound} />
   </Switch>
 );

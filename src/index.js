@@ -10,7 +10,7 @@ import './index.css';
 
 import App from './App';
 
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 // Create a store and get back itself and its history object
 const { store, history } = createStore();
@@ -40,4 +40,4 @@ if (process.env.NODE_ENV === 'production') {
   render(Application, root);
 }
 
-registerServiceWorker();
+// registerServiceWorker();

@@ -49,7 +49,6 @@ export default (req, res) => {
       // If there's an error... serve up something nasty
       if (err) {
         console.error('Read error', err);
-
         return res.status(404).end();
       }
 
@@ -120,7 +119,8 @@ export default (req, res) => {
 
           // NOTE: Disable if you desire
           // Let's output the title, just to see SSR is working as intended
-          console.log('THE TITLE', helmet.title.toString());
+          // console.debug('THE TITLE', helmet.title.toString());
+          // console.debug('THE META', helmet.meta.toString());
 
           // Pass all this nonsense into our HTML formatting function above
           const html = injectHTML(htmlData, {

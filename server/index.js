@@ -1,3 +1,5 @@
+// loads module and registers app specific cleanup callback...
+var cleanup = require('./cleanup').Cleanup(myCleanup);
 const md5File = require('md5-file');
 const path = require('path');
 
@@ -35,6 +37,10 @@ require('babel-register')({
     'react-loadable/babel'
   ]
 });
+
+function myCleanup() {
+  console.log('Cleaning up...');
+}
 
 // Now that the nonsense is over... load up the server entry point
 require('./server');
