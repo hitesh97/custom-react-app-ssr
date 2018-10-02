@@ -39,23 +39,25 @@ class SiderView extends Component {
             <Link to="/">
               <Icon type="user" />
               <span className="nav-text">Home</span>
-            </Link>{' '}
+            </Link>
           </Menu.Item>
           <Menu.Item key="2">
             <Link to="/help">
               <Icon type="video-camera" />
               <span className="nav-text">Help</span>
-            </Link>{' '}
+            </Link>
           </Menu.Item>
           <Menu.Item key="3">
             <Link to="/about">
               <Icon type="upload" />
               <span className="nav-text">About</span>
-            </Link>{' '}
+            </Link>
           </Menu.Item>
           <Menu.Item key="4">
-            <Icon type="user" />
-            <span className="nav-text">nav 4</span>
+            <Link to="/not_exist">
+              <Icon type="user" />
+              <span className="nav-text">Nav 4</span>
+            </Link>
           </Menu.Item>
         </Menu>
       </Sider>
